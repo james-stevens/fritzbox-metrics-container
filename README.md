@@ -9,3 +9,5 @@ interfact of your Fritz!Box, typically this is `http://<default-route/gateway>/`
 
 You should also create a user in your Fritz!Box, say called `metrics`, and supply
 the username and password as `FRITZ_BOX_USERNAME` and `FRITZ_BOX_PASSWORD`.
+
+This container is designed to run `--read-only`.

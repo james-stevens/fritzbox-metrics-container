@@ -1,0 +1,15 @@
+#! /bin/sh
+
+if test -z "${FRITZ_BOX_ADDRESS}"
+	then
+		echo "ERROR: No FRITZ_BOX_ADDRESS set"
+		exit 1
+	fi
+
+cd /usr/local/bin
+export USERNAME="${FRITZ_BOX_USERNAME}"
+export PASSWORD="${FRITZ_BOX_PASSWORD}"
+
+exec /usr/local/bin/fritzbox_exporter \
+	-gateway-luaurl=http://${FRITZ_BOX_ADDRESS} \
+	-gateway-url=http://${FRITZ_BOX_ADDRESS}:49000
