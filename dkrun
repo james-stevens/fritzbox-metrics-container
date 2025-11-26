@@ -1,6 +1,6 @@
 #! /bin/sh
 
-docker run --read-only \
+docker run \
 	--read-only \
 	--env "FRITZ_BOX_ADDRESS=192.168.0.254" \
 	--env "FRITZ_BOX_USERNAME=${FRITZ_BOX_USERNAME}" \
