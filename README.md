@@ -1,6 +1,6 @@
 # fritzbox-metrics-container
 
-Built using this (fritzbox_exporter)[https://github.com/sberk42/fritzbox_exporter]
+Built using this [fritzbox_exporter](https://github.com/sberk42/fritzbox_exporter).
 
 This container will pull metrics from your Fritz!Box router and export them on port 9042.
 
