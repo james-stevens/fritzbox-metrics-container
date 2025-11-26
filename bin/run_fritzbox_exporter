@@ -11,5 +11,6 @@ export USERNAME="${FRITZ_BOX_USERNAME}"
 export PASSWORD="${FRITZ_BOX_PASSWORD}"
 
 exec /usr/local/bin/fritzbox_exporter \
+	-listen-address="0.0.0.0:9042" \
 	-gateway-luaurl=http://${FRITZ_BOX_ADDRESS} \
 	-gateway-url=http://${FRITZ_BOX_ADDRESS}:49000

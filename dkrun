@@ -1,0 +1,9 @@
+#! /bin/sh
+
+docker run --read-only \
+	--read-only \
+	--env "FRITZ_BOX_ADDRESS=192.168.0.254" \
+	--env "FRITZ_BOX_USERNAME=${FRITZ_BOX_USERNAME}" \
+	--env "FRITZ_BOX_PASSWORD=${FRITZ_BOX_PASSWORD}" \
+	-p 9042:9042 \
+	-it $(cat list) $*
